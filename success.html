@@ -389,13 +389,15 @@
             padding-top: 20px;
         }
 
-        .footer-content img {
-            height: 22px;
+        .footer-content img,
+        .footer-content svg {
+            height: 24px;
             opacity: 0.5;
             transition: opacity 0.3s ease;
         }
 
-        .footer-content img:hover {
+        .footer-content img:hover,
+        .footer-content svg:hover {
             opacity: 0.9;
         }
 
@@ -604,8 +606,24 @@
 
         <!-- Security seals footer (requires class footer-content) -->
         <div class="footer-content">
-            <img src="data:image/png;base64,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" alt="Norton Security">
-            <img src="data:image/png;base64,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" alt="McAfee Security">
+            <!-- Norton Secured SVG Badge -->
+            <svg class="security-seal-svg" viewBox="0 0 130 30" aria-label="Norton Secured">
+                <g transform="translate(2, 2)">
+                    <circle cx="13" cy="13" r="12" fill="#F4B400" />
+                    <path d="M7 13.5 L11 17.5 L19 9.5" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <text x="35" y="15" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a">Norton</text>
+                <text x="35" y="25" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#64748b" letter-spacing="1">SECURED</text>
+            </svg>
+            <!-- McAfee Secure SVG Badge -->
+            <svg class="security-seal-svg" viewBox="0 0 130 30" aria-label="McAfee Secure">
+                <g transform="translate(2, 2)">
+                    <path d="M13 2 L23 6 V13 C23 19 19 23 13 25 C7 23 3 19 3 13 V6 Z" fill="#D93025" />
+                    <path d="M8 9 L13 14 L18 9 V17 L13 21 L8 17 Z" fill="#FFFFFF" />
+                </g>
+                <text x="35" y="15" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#0f172a">McAfee</text>
+                <text x="35" y="25" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#64748b" letter-spacing="1">SECURE</text>
+            </svg>
         </div>
     </div>
 </div>
